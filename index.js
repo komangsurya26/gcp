@@ -1,10 +1,10 @@
 const express = require('express')
-
 const app = express()
+require('dotenv').config()
 
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    return res.send('Hello World!')
 })
 
 //listen
