@@ -11,5 +11,6 @@ app.get('/alamat', (req, res) => {
     return res.send('Hello World!')
 })
 
+//listen2
 //listen
 app.listen(process.env.PORT, () => console.log("Listening on port 3000"));
