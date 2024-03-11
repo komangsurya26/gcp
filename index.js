@@ -8,7 +8,9 @@ app.get('/', (req, res) => {
 })
 
 app.get('/alamat', (req, res) => {
-   return res.send("Sanur")
+   const { alamat } = req.query
+
+   return res.send(alamat);
 })
 
 //listen2
