@@ -7,8 +7,9 @@ app.get('/', (req, res) => {
     return res.send('Hello World!')
 })
 
-app.get('/alamat', (req, res) => {
-    return res.send('Hello World!')
+app.get('/', (req, res) => {
+    const {alamat} = req.query
+    return res.send(alamat);
 })
 
 //listen2
